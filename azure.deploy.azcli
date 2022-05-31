@@ -1,0 +1,6 @@
+location="westeurope"
+
+az deployment sub create \
+  --template-file azure.deploy.bicep \
+  --location $location \
+  --parameters azure.deploy.parameters.json

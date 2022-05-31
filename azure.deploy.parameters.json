@@ -11,6 +11,12 @@
     "location": {
       "value": "westeurope"
     },
+    "jumphostAdministratorPassword": {
+      "value": "QWopASkl;'1"
+    },
+    "sqlServerAdministratorPassword": {
+      "value": "ASklZXnm,./1"
+    },
     "tags": {
       "value": {
         "owner": "myself",

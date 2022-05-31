@@ -5,6 +5,12 @@ param applicationName string
 param environment string
 param tags object = {}
 
+@secure()
+param jumphostAdministratorPassword string
+
+@secure()
+param sqlServerAdministratorPassword string
+
 var defaultTags = union({
   applicationName: applicationName
   environment: environment
@@ -28,6 +34,7 @@ module naming 'modules/naming.module.bicep' = {
     ]
     uniqueLength: 6
     uniqueSeed: rg.id
+    location: location
   }
 }
 
@@ -40,12 +47,12 @@ module main 'main.bicep' = {
     location: location
     naming: naming.outputs.names
     tags: defaultTags
+    jumphostAdministratorPassword: jumphostAdministratorPassword
+    sqlServerAdministratorPassword: sqlServerAdministratorPassword
   }
 }
 
 // Customize outputs as required from the main deployment module
 output resourceGroupId string = rg.id
 output resourceGroupName string = rg.name
-output appServiceName string = main.outputs.appServiceName
-output appServicePlanName string = main.outputs.appServicePlanName
 output storageAccountName string = main.outputs.storageAccountName
