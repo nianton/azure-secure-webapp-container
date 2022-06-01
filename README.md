@@ -1,6 +1,6 @@
-# Secure website deployment on Azure - GAB 2022 edition
+# Secure Web App for Containers deployment on Azure
 
-[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fnianton%2Fgab2022-bicep%2Fmain%2Fazure.deploy.json)
+[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fnianton%2Fazure-secure-webapp-container%2Fmain%2Fazure.deploy.json)
 
 
 This is a templated deployment of a secure Azure architecture for hosting a web application application, having all the related PaaS components deployed in a virtual network leveraging Private Endpoints.

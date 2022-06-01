@@ -30,10 +30,10 @@ var createNetworkConfig = !empty(subnetIdForIntegration)
 var linuxFxVersion = empty(containerApplicationTag) ? 'DOCKER|mcr.microsoft.com/appsvc/staticsite:latest' : 'DOCKER|${containerApplicationTag}'
 
 var networkConfigAppSettings = createNetworkConfig ? [
-  // {
-  //   name: 'WEBSITE_VNET_ROUTE_ALL'
-  //   value: '1'
-  // }
+  {
+    name: 'WEBSITE_PULL_IMAGE_OVER_VNET'
+    value: 'true'
+  }
   { 
     name: 'WEBSITE_DNS_SERVER'
     value: '168.63.129.16'

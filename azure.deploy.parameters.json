@@ -12,15 +12,15 @@
       "value": "westeurope"
     },
     "jumphostAdministratorPassword": {
-      "value": "QWopASkl;'1"
+      "value": "SayTheP@ssword1"
     },
     "sqlServerAdministratorPassword": {
-      "value": "ASklZXnm,./1"
+      "value": "SayTheP@ssword1"
     },
     "tags": {
       "value": {
-        "owner": "myself",
-        "costCenter": "personal wallet"
+        "businessUnit": "My Business Unit",
+        "costCenter": "231234"
       }
     }
   }
